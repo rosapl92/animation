@@ -1,0 +1,29 @@
+.elm2 {
+    border: 5px solid mediumvioletred;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.elm2{
+    animation-name: over-and-back;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+}
+
+@keyframes over-and-back {
+    0%{
+        background-color: fuchsia;
+        position: relative;
+        left: 0;
+    }
+    50%{
+        background-color: aqua;
+        position: relative;
+        left: 250px;
+    }
+    100%{
+        background-color: fuchsia;
+        position: relative;
+        left: 0;
+    }
+}
