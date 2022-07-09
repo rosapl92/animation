@@ -14,7 +14,7 @@
 }
 .elm3{
     animation-name: my--animation;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-iteration-count: 10;
     /*animation-direction: reverse;*/
     animation-play-state: running;
