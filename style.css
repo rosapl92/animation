@@ -1,4 +1,4 @@
-.elm2 {
+.elm2, .elm3 {
     border: 5px solid mediumvioletred;
     border-radius: 50%;
     width: 100px;
@@ -9,23 +9,67 @@
     animation-name: over-and-back;
     animation-duration: 4s;
     animation-iteration-count: 10;
+    /*animation-direction: reverse;*/
+    animation-play-state: running;
 }
-
+.elm3{
+    animation-name: my--animation;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    /*animation-direction: reverse;*/
+    animation-play-state: running;
+}
+@keyframes my--animation {
+    0%{
+        background-color: blue;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    50%{
+        background-color: palevioletred;
+        border: 5px solid violet;
+        position: relative;
+        left: 250px;
+        top: 25px;
+    }
+    90%{
+        background-color: aqua;
+        position: relative;
+        left: 0;
+        top: 50px;
+    }
+    100%{
+        background-color: blue;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
 @keyframes over-and-back {
     0%{
         background-color: fuchsia;
         position: relative;
         left: 0;
+        top: 0;
     }
     50%{
         background-color: aqua;
         border: 5px solid violet;
         position: relative;
         left: 250px;
+        top: 25px;
     }
-    100%{
+    90%{
         background-color: fuchsia;
         position: relative;
         left: 0;
+        top: 50px;
     }
+    100%{
+         background-color: fuchsia;
+         position: relative;
+         left: 0;
+         top: 0;
+     }
 }
