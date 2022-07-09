@@ -19,6 +19,7 @@
     }
     50%{
         background-color: aqua;
+        border: 5px solid violet;
         position: relative;
         left: 250px;
     }
